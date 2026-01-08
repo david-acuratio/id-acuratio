@@ -1,1 +1,22 @@
-test
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": "VerifiableCredential",
+    "issuanceDate": "2026-01-08T11:47:16.211967Z",
+    "credentialSubject": {
+        "type": "gx:GaiaXTermsAndConditions",
+        "gx:termsAndConditions": "The PARTICIPANT signing the Self-Description agrees as follows:\n- to update its descriptions about any changes, be it technical, organizational, or legal - especially but not limited to contractual in regards to the indicated attributes present in the descriptions.\n\nThe keypair used to sign Verifiable Credentials will be revoked where Gaia-X Association becomes aware of any inaccurate statements in regards to the claims which result in a non-compliance with the Trust Framework and policy rules defined in the Policy Rules and Labelling Document (PRLD).",
+        "id": "https://david-acuratio.github.io/id-acuratio/tsandcs.json#subject"
+    },
+    "issuer": "did:web:david-acuratio.github.io:id-acuratio",
+    "id": "https://david-acuratio.github.io/id-acuratio/tsandcs.json",
+    "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:david-acuratio.github.io:id-acuratio#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..D1f0J8-ku45PG8hA1zG30NfBxsmGRpuqz5G8jwjr6cd8qPwwC5tz3XmMR-UdqdpTjdOrp4TRh2P4Xe-uPBhsbQ5KP18PxSw3IYrjGh5o2zaMM959XdXYi6f53_Z_izZjQrEvpu9kKMRt06YtSrbqdj7V_Rh89rSe_Jjb3XtPhm9Q8JotIonpZdYqr81d7j8wOEms2XLkDVWXam_ug6Lq43FIrcCaVLpmsQbPS4BIezOBLxFS_Zp6Qfir2yKU7d0JrYGCUFJHKBV_xBOf4e2kCkLQBrU-OV7pJ37fECXPAueA6TFZT0lwoJb3xsKwF1d8AAT6OcKd2XpGgCi74BUXcg"
+    }
+}
