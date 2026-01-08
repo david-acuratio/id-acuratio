@@ -1,12 +1,4 @@
 {
-  "@context": [
-    "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/participant"
-  ],
-  "type": "gx:legalRegistrationNumber",
-  "id": "https://david-acuratio.github.io/id-acuratio/lrn.json#cs",
-  "gx:vatID": "ESB75217612"
-}
-{
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         "https://w3id.org/security/suites/jws-2020/v1"
@@ -23,8 +15,19 @@
         "id": "https://david-acuratio.github.io/id-acuratio/lrn.json#cs",
         "gx:vatID": "ESB75217612",
         "gx:vatID-countryCode": "ES"
-...
-    "verificationMethod": "did:web:registration.lab.gaia-x.eu:v1#X509-JWK2020",
-    "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i_ImzDzFCWRjODV3iyqFzrzXtG1mRWa8uxAHnsLk_UYLrRKuwTA1FiS8GD_WtONCMThfw6lOtqLrAZJdGW9-MiReRYF777DL6crJZcR0TcEmZoN28qeWAjy31ikKJLc2BnMkwaqtR3x85Vro1G-tIBqWzKG6YdRTFytjs53VlOHbDiEjvI1NYyZ6tiDwS1k6vRvRGIiHvWhkhb2PVlfY9alVOXcQ1IgQuYsEeTPoEJAISDo6H-sw_RyVdgADpagxL-TTF5BHAIfI-ONPRhlNdZY9lHrcDv0OlDTcgIJUqS1OzLnVpx4ndMit1ryaaAkluWT_S7DudOU2iEb7yMioqw"
-  }
+    },
+    "evidence": [
+        {
+            "gx:evidenceURL": "http://ec.europa.eu/taxation_customs/vies/services/checkVatService",
+            "gx:executionDate": "2026-01-08T11:47:43.946Z",
+            "gx:evidenceOf": "gx:vatID"
+        }
+    ],
+    "proof": {
+        "type": "JsonWebSignature2020",
+        "created": "2026-01-08T11:47:43.963Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:registration.lab.gaia-x.eu:v1#X509-JWK2020",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i_ImzDzFCWRjODV3iyqFzrzXtG1mRWa8uxAHnsLk_UYLrRKuwTA1FiS8GD_WtONCMThfw6lOtqLrAZJdGW9-MiReRYF777DL6crJZcR0TcEmZoN28qeWAjy31ikKJLc2BnMkwaqtR3x85Vro1G-tIBqWzKG6YdRTFytjs53VlOHbDiEjvI1NYyZ6tiDwS1k6vRvRGIiHvWhkhb2PVlfY9alVOXcQ1IgQuYsEeTPoEJAISDo6H-sw_RyVdgADpagxL-TTF5BHAIfI-ONPRhlNdZY9lHrcDv0OlDTcgIJUqS1OzLnVpx4ndMit1ryaaAkluWT_S7DudOU2iEb7yMioqw"
+    }
 }
