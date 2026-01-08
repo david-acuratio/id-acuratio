@@ -1,1 +1,24 @@
-test
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:david-acuratio.github.io:id-acuratio",
+  "verificationMethod": [
+    {
+      "id": "did:web:david-acuratio.github.io:id-acuratio#JWK2020-RSA",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:david-acuratio.github.io:id-acuratio",
+      "publicKeyJwk": {
+        "kty": "RSA",
+        "n": "ulI_W4_CR64oQ3VDVCPv7n02NKgjLpFdx7Aet1G5r11fEAg3XJSbt8jWXqc_P9G8FnoDvmTM1tx9aP7vY9Z0rRjsw5i7yDG3ezjEIrH0txtm12rJ6a0IBtl7RAw8N9nQ3z3HOjbCWdtReDl73dS9paCLy7gSceEh8Cx5DJn4VfWwuDN4cCZmEX5snh8RmtNksDJTwMLqrLk2CLRIwoE1DGjGneA485hmb3NCZLNQiDHbt9svpGfWJK19iO-g5t2ZddOkQA6h_SeWtdZgF8lkmaPg0sKUr4wveXtrc1mQ9lsKCiU2Gy2-lTzO19hshCTwlTaTNE_n0d6L1NbleTgN2Q",
+        "e": "AQAB",
+        "alg": "PS256",
+        "x5u": "https://david-acuratio.github.io/id-acuratio/cert.pem"
+      }
+    }
+  ],
+  "assertionMethod": [
+    "did:web:david-acuratio.github.io:id-acuratio#JWK2020-RSA"
+  ]
+}
