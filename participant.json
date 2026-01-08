@@ -1,1 +1,33 @@
-
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    ],
+    "type": [
+        "VerifiableCredential"
+    ],
+    "id": "https://david-acuratio.github.io/id-acuratio/participant.json",
+    "issuer": "did:web:david-acuratio.github.io:id-acuratio",
+    "issuanceDate": "2026-01-08T11:48:47.457182Z",
+    "credentialSubject": {
+        "id": "https://david-acuratio.github.io/id-acuratio/participant.json#cs",
+        "type": "gx:LegalParticipant",
+        "gx:legalName": "Acuratio Europe SLU",
+        "gx:legalRegistrationNumber": {
+            "gx:vatID": "ESB75217612"
+        },
+        "gx:headquarterAddress": {
+            "gx:countrySubdivisionCode": "ES-SS"
+        },
+        "gx:legalAddress": {
+            "gx:countrySubdivisionCode": "ES-SS"
+        }
+    },
+    "proof": {
+        "type": "JsonWebSignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:david-acuratio.github.io:id-acuratio#JWK2020-RSA",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..vSbey02xzRTvGiX8LbH2XNiHtdanWHprhO7XsKh7EtSbYog0VOWa0PCgX8Br_21hIOSf6NOa3naVPWd7ATw5Bs2fvT3XDG9Bp6dgPnGhyJzv4fZMsrGSG0xiUwAjWYkrpFR3hESJeRCMuaYqYG2kgeolZ4u3iao2RBoNPdWAi49L0VNkkV3fIzfNNDl7Py7_-AgNU51fDfaIUFwu1v7RS5UNzHhdKv5e1Hv017H_Gu1gzIwciL0pr8UEyQDNF7juNmuPxzZKxe-XUM0BwvySR9xdfnIx6iFy7VQNNcqsvh8rFiAdDivfTq6TNdAYO-FZI3tC59wUE82Jn05LvfwYOg"
+    }
+}
